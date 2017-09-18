@@ -3,7 +3,6 @@ package com.example.hoangcongtuan.giaiptbac1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -52,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        edtA.setText("0");
+        edtB.setText("0");
         if (requestCode == RC_GPT && resultCode == RC_OK) {
             //activiy come back
             double a, b;
@@ -60,14 +61,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Welcom back to MainActivity, Your last edit text : a= " + a + " ,b= " + b, Toast.LENGTH_SHORT).show();
 
         }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        edtA.setText("0");
-        edtB.setText("0");
-        Log.d(TAG, "onResume: ");
     }
 
 }
