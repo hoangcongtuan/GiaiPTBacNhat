@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hoangcongtuan.giaiptbac1.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giải phương trình bật nhất"
+        android:textSize="@dimen/titleSize"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorGreen"
+        android:textAlignment="center"
+        android:padding="@dimen/textPadding"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập số a:"
+            android:textSize="@dimen/hesoSize"
+            android:layout_margin="@dimen/textMargin"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtA"
+            android:layout_margin="@dimen/textMargin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập số b:"
+            android:textSize="@dimen/hesoSize"
+            android:layout_margin="@dimen/textMargin"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtB"
+            android:layout_margin="@dimen/textMargin"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKetqua"
+        android:text="Kết quả"
+        android:background="@color/colorRed"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/hesoSize"/>
+
+</LinearLayout>
